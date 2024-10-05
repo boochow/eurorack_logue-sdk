@@ -1,0 +1,21 @@
+{
+    "header" : 
+    {
+        "platform" : "nutekt-digital",
+        "module" : "osc",
+        "api" : "1.1-0",
+        "dev_id" : 0,
+        "prg_id" : 0,
+        "version" : "1.0-0",
+        "name" : "LiRS",
+        "num_param" : 6,
+        "params" : [
+            ["shap",    28, 36,    ""],
+            ["mtgt",    0, 1,     ""],
+            ["mdly",    0, 31,    ""],
+            ["ptch",    0, 63, "%"],
+            ["bits",    0, 6,     ""],
+            ["rate",    0, 5,     ""]            
+          ]
+    }
+}

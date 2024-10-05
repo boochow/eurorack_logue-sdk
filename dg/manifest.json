@@ -1,0 +1,21 @@
+{
+    "header" : 
+    {
+        "platform" : "nutekt-digital",
+        "module" : "osc",
+        "api" : "1.1-0",
+        "dev_id" : 0,
+        "prg_id" : 0,
+        "version" : "1.0-0",
+        "name" : "LilyDG",
+        "num_param" : 6,
+        "params" : [
+            ["Synth Model",  15, 20,   ""],
+            ["Mod Target",   0, 2,     ""],
+            ["Mod Delay",    0, 31,    ""],
+            ["Pitch Offset", 0, 63,    ""],
+            ["Bit Depth",    0, 6,     ""],
+            ["Sample Rate",  0, 5,     ""]            
+          ]
+    }
+}
