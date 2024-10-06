@@ -162,6 +162,11 @@ public:
     inline void setParameter(uint8_t index, int32_t value) {
         switch(index) {
         case Shape:
+#ifdef KORG_NTS1
+            // NTS-1's shape parameter value is 1 greater than other platforms
+            // due to a bug of NTS-1's firmware
+            value--;
+#endif
 #ifdef LILYVA
             CONSTRAIN(value, 0, 14);
 #endif
