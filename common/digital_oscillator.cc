@@ -35,7 +35,7 @@
 #include "stmlib/utils/random.h"
 
 #include "braids/parameter_interpolation.h"
-#include "braids/resources.h"
+#include "resources.h"
 
 namespace braids {
   

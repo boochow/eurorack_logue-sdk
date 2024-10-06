@@ -32,7 +32,7 @@
 #include "stmlib/stmlib.h"
 
 #include "braids/excitation.h"
-#include "braids/svf.h"
+#include "svf.h"
 
 #include <cstring>
 

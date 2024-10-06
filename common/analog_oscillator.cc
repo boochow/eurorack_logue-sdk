@@ -30,7 +30,7 @@
 
 #include "stmlib/utils/dsp.h"
 
-#include "braids/resources.h"
+#include "resources.h"
 #include "braids/parameter_interpolation.h"
 
 namespace braids {

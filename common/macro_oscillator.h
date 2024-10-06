@@ -39,7 +39,7 @@
 #endif
 //#include "braids/digital_oscillator.h"
 #include "digital_oscillator.h"
-#include "braids/resources.h"
+#include "resources.h"
 #include "braids/settings.h"
 
 namespace braids {

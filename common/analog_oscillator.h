@@ -34,7 +34,7 @@
 #include <cstring>
 #include <cstdio>
 
-#include "braids/resources.h"
+#include "resources.h"
 
 namespace braids {
 
