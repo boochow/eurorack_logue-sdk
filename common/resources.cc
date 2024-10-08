@@ -37,7 +37,7 @@ namespace braids {
 static const char str_dummy[] = "dummy";
 
 
-const char* string_table[] = {
+const char* const string_table[] = {
   str_dummy,
 };
 */
@@ -77,7 +77,6 @@ const uint16_t lut_resonator_coefficient[] = {
        0,      0,      0,      0,
        0,
 };
-
 const uint16_t lut_resonator_scale[] = {
        1,      1,      1,      1,
        1,      1,      1,      1,
@@ -687,7 +686,6 @@ const uint16_t lut_bowing_friction[] = {
       67,     66,     66,     65,
       64,
 };
-
 const uint16_t lut_blowing_envelope[] = {
        0,    361,    722,   1083,
     1444,   1805,   2166,   2527,
@@ -1020,7 +1018,8 @@ const uint16_t lut_env_expo[] = {
    65535,
 };
 
-const uint16_t* lookup_table_table[] = {
+
+const uint16_t* const lookup_table_table[] = {
   lut_resonator_coefficient,
   lut_resonator_scale,
   lut_svf_cutoff,
@@ -1035,7 +1034,7 @@ const uint16_t* lookup_table_table[] = {
   lut_fm_frequency_quantizer,
   lut_vco_detune,
   lut_bell,
-//  lut_env_expo,
+  lut_env_expo,
 };
 */
 #ifdef LILYRS
@@ -1108,7 +1107,7 @@ const int16_t lut_blowing_jet[] = {
 };
 #endif
 /*
-const int16_t* lookup_table_signed_table[] = {
+const int16_t* const lookup_table_signed_table[] = {
   lut_blowing_jet,
 };
 */
@@ -1203,7 +1202,7 @@ const uint32_t lut_env_portamento_increments[] = {
 };
 
 
-const uint32_t* lookup_table_hr_table[] = {
+const uint32_t* const lookup_table_hr_table[] = {
   lut_oscillator_increments,
   lut_oscillator_delays,
   lut_env_portamento_increments,
@@ -1343,7 +1342,6 @@ const int16_t wav_formant_square[] = {
       -9,    -11,    -13,    -16,
 };
 #endif
-
 const int16_t wav_sine[] = {
   -32512, -32502, -32473, -32423,
   -32356, -32265, -32160, -32031,
@@ -1411,7 +1409,6 @@ const int16_t wav_sine[] = {
   -32356, -32423, -32473, -32502,
   -32512,
 };
-
 #if defined(LILYVA) || defined(LILYDG) || defined(LILYFM)
 const int16_t wav_bandlimited_comb_0[] = {
     -126,   -123,   -118,   -120,
@@ -2419,7 +2416,8 @@ const int16_t wav_bandlimited_comb_14[] = {
        0,
 };
 
-const int16_t* waveform_table[] = {
+
+const int16_t* const waveform_table[] = {
 #ifdef LILYFM
   wav_formant_sine,
   wav_formant_square,
@@ -2444,6 +2442,7 @@ const int16_t* waveform_table[] = {
   wav_bandlimited_comb_13,
   wav_bandlimited_comb_14,
 };
+
 #endif
 #if defined(LILYVA) || defined(LILYDG) || defined(LILYFM) || defined(LILYNZ)
 const int16_t ws_moderate_overdrive[] = {
@@ -2582,8 +2581,6 @@ const int16_t ws_violent_overdrive[] = {
    32766,  32766,  32766,  32766,
    32766,
 };
-#endif
-#if defined(LILYVA) || defined(LILYDG)
 const int16_t ws_sine_fold[] = {
   -32766, -32682, -32595, -32504,
   -32410, -32315, -32218, -32121,
@@ -2651,8 +2648,6 @@ const int16_t ws_sine_fold[] = {
    32410,  32504,  32595,  32682,
    32682,
 };
-#endif
-#if defined(LILYVA) || defined(LILYDG)
 const int16_t ws_tri_fold[] = {
      -78, -20070, -31636, -30481,
   -17545,   1825,  20257,  31198,
@@ -2721,7 +2716,8 @@ const int16_t ws_tri_fold[] = {
    19915,
 };
 
-const int16_t* waveshaper_table[] = {
+
+const int16_t* const waveshaper_table[] = {
   ws_moderate_overdrive,
   ws_violent_overdrive,
   ws_sine_fold,
@@ -11326,7 +11322,7 @@ const uint8_t wt_code[] = {
 };
 #endif
 /*
-const uint8_t* wt_table[] = {
+const uint8_t* const wt_table[] = {
   wt_waves,
   wt_map,
   wt_code,
@@ -11400,7 +11396,7 @@ const uint16_t chr_characters[] = {
 };
 
 
-const uint16_t* char_table[] = {
+const uint16_t* const char_table[] = {
   chr_characters,
 };
 */
