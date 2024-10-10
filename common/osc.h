@@ -80,9 +80,6 @@ public:
 #endif
         osc_.set_shape(static_cast<braids::MacroOscillatorShape>(p_[Shape]));
 
-        p_[Resolution] = 6;
-        p_[SampleRate] = 5;
-        lfoz_ = 0;
         lfo_timbre_ = 1;
         lfo_color_ = 0;
     }
